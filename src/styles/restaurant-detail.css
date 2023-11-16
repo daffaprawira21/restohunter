@@ -1,0 +1,128 @@
+.restaurant-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 3rem;
+  gap: 1.5rem;
+}
+
+.restaurant-detail h3 {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+.content-thumbnail {
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 10px;
+}
+
+.content-subtitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.content-categories {
+  font-size: 1.2rem;
+}
+.content-categories span {
+  background-color: #eee;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.content-description {
+  margin-top: 2rem;
+  line-height: 28px;
+  font-size: 1rem;
+}
+
+.content-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  line-height: 28px;
+  padding: 1rem 0;
+}
+.content-menu h4 {
+  font-size: 1.2rem;
+}
+
+.content-review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.review {
+  padding: 1rem;
+  background-color: #eee;
+  border-radius: 10px;
+  line-height: 28px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-comment {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #db0000;
+
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+  .content-review {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .restaurant-detail {
+    padding: 1rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content-review {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-subtitle {
+    font-size: 1rem;
+  }
+  .content-categories {
+    font-size: 1rem;
+  }
+}

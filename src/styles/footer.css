@@ -1,0 +1,39 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1e1e1e;
+  gap: 1rem;
+  margin-top: 5rem;
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 98;
+}
+footer .footerTools {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  color: #eee;
+}
+footer .footerTools .footerTools-btn {
+  background-color: transparent;
+  color: #eee;
+  border-style: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 1rem;
+}
+footer .footerTools .footerTools-btn:hover {
+  color: #eee0c9;
+}
+footer .copyright {
+  color: #eee0c9;
+  font-size: 1.2rem;
+}
+footer .notifyUpdate {
+  font-size: 1.1rem;
+  color: #eee0c9;
+}
