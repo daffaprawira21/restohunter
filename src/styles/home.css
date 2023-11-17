@@ -31,10 +31,10 @@ body {
   background-color: #bf1722;
   color: #fff;
   font-size: 1.2rem;
-  z-index: 100;
+  z-index: 1000;
 }
 .skip-link:focus {
-  top: 0;
+  top: 110px;
 }
 
 .main-title,
