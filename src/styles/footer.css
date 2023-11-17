@@ -1,7 +1,7 @@
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: stretch;
   align-items: center;
   background-color: #1e1e1e;
   gap: 1rem;
@@ -31,9 +31,28 @@ footer .footerTools .footerTools-btn:hover {
 }
 footer .copyright {
   color: #eee0c9;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 footer .notifyUpdate {
   font-size: 1.1rem;
   color: #eee0c9;
+}
+@media only screen and (max-width: 350px) {
+  footer {
+    gap: 0.5rem;
+    padding: 1.5rem;
+  }
+  footer .copyright,
+  footer .notifyUpdate {
+    font-size: 12px;
+  }
+  footer .footerTools .footerTools-btn {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  footer {
+    gap: 0.5rem;
+    padding: 1rem;
+  }
 }
