@@ -1,5 +1,3 @@
-import 'lazysizes';
-import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import CONFIG from '../../globals/config';
 
 const createRestaurantList = (resto) => `
@@ -8,7 +6,7 @@ const createRestaurantList = (resto) => `
         <div class="restaurant-card__item">
           <img class="restaurant-card__item-image lazyload" alt="${
             resto.name
-          }" src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}"/>
+          }" data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}"/>
           <span class="restaurant-card__item-rating">
               <i class="fa-solid fa-star"></i>
               <span>${resto.rating}</span>

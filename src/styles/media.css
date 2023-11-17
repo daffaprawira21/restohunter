@@ -37,10 +37,6 @@
     margin: 2.4rem 0;
   }
 
-  /* .nav-link {
-    padding: 1rem;
-  } */
-
   .hamburger {
     display: block;
     cursor: pointer;
@@ -71,16 +67,50 @@
 
 @media only screen and (max-width: 500px) {
   .hero-inner__title {
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
   .hero-inner__tagline {
-    font-size: 1.8rem;
-    line-height: 2.6rem;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
   }
   #restaurant-list {
     grid-template-columns: 1fr;
   }
   footer .copyright {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  #restaurant-list {
+    padding: 1rem;
+  }
+  .navbar {
+    padding: 1rem;
+  }
+  .nav-logo {
+    font-size: 1.4rem;
+    font-weight: var(--fw-semibold);
+    color: #eee0c9;
+    padding: 6px 0;
+  }
+  .nav-item__link {
+    font-size: 1.2rem;
+  }
+  .hero-inner__title {
+    font-size: 2.4rem;
+  }
+  .hero-inner__tagline {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .hero-inner__btn-explore {
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+}
+@media only screen and (max-width: 250px) {
+  .navbar {
+    padding: 1rem 0.5rem;
   }
 }
