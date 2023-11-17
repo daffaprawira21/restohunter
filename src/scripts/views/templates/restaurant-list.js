@@ -4,7 +4,7 @@ const createRestaurantList = (resto) => `
     <a href="#/detail/${resto.id}">    
       <div class="restaurant-card">
         <div class="restaurant-card__item">
-          <img class="restaurant-card__item-image lazyload" alt="${
+          <img class="lazyload restaurant-card__item-image" alt="${
             resto.name
           }" data-src="${CONFIG.BASE_IMAGE_URL + resto.pictureId}"/>
           <span class="restaurant-card__item-rating">
